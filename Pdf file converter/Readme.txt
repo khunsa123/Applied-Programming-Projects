@@ -1,48 +1,82 @@
-PDF Converter Desktop Application
-This desktop application allows you to convert PDF files into either Word documents or images (JPEG or PNG). It provides a user-friendly interface for selecting input PDF files, choosing the output format, and converting the PDF accordingly.
+# 📄 PDF Converter Desktop Application
 
-Features
-Convert PDF files to Word documents (docx).
-Convert PDF files to image files (JPEG or PNG).
-Simple and intuitive user interface.
-Supports batch conversion for PDF to image.
-Prerequisites
-Before using the application, ensure that you have the following dependencies installed:
+## 📌 Overview
+This desktop application allows users to convert **PDF files** into:
+- **Word documents (.docx)**
+- **Image formats (JPEG / PNG)**
 
-Python 3.x
-Tkinter
-PyPDF2
-pdf2image
-Pandoc (for PDF to Word conversion)
-docx2txt (for extracting text from Word documents)
-You can install the Python dependencies using pip. For Pandoc and other system-level dependencies, please refer to the respective documentation.
+It provides a **simple and user-friendly interface** for selecting input files, choosing output formats, and performing conversions efficiently.
 
+---
+
+## ✨ Features
+- Convert PDF files to **Word documents (.docx)**
+- Convert PDF files to **image files (JPEG / PNG)**
+- Simple and intuitive **GUI interface**
+- Supports **batch conversion** for PDF to image
+
+---
+
+## ⚙️ Prerequisites
+Before running the application, ensure the following dependencies are installed:
+
+### 🐍 Required Software
+- Python 3.x
+- Tkinter
+- PyPDF2
+- pdf2image
+- Pandoc *(required for PDF → Word conversion)*
+- docx2txt *(for Word text extraction)*
+
+---
+
+## 📦 Installation
+
+Install Python dependencies using pip:
+
+```bash
 pip install tk PyPDF2 pdf2image docx2txt
 
-Usage
-Launch the application.
-Click the "Browse" button to select the input PDF file.
-Choose the desired output format (Word or Image).
-Click the "Convert" button to start the conversion process.
-If converting to Word, specify the output file path and name.
-If converting to Image, select the output folder.
-Example
-Here's an example of how to use the application:
+---
 
-Click the "Browse" button and select the input PDF file.
-Choose "Word" as the output format.
-Click the "Convert" button.
-Specify the name and location for the output Word document.
-Click "Save."
-The application will convert the PDF to a Word document.
+Install **Pandoc** separately and ensure it is added to your system PATH.
 
-Troubleshooting
-If you encounter issues with PDF to Word conversion, ensure that Pandoc is correctly installed and in your system's PATH.
-If the application crashes or doesn't work as expected, please check your dependencies and ensure they are properly installed.
+---
 
-Acknowledgments
-This application was created using Python and the Tkinter library for the graphical user interface.
-PDF to Word conversion is facilitated by Pandoc.
-PDF to image conversion is performed using pdf2image.
-Text extraction from Word documents is done with docx2txt.
-Feel free to customize this README file to include more specific details about your application, installation instructions, or any additional features. It's a vital document for users and potential contributors to understand and use your application effectively.
+## 🚀 Usage
+1. Launch the application  
+2. Click **"Browse"** to select the input PDF file  
+3. Choose the desired output format (**Word** or **Image**)  
+4. Click **"Convert"** to start the process  
+
+### 📄 For Word Conversion:
+- Specify the output file name and location  
+
+### 🖼️ For Image Conversion:
+- Select the output folder  
+
+---
+
+## 🧪 Example Workflow
+1. Click **"Browse"** and select a PDF file  
+2. Choose **"Word"** as the output format  
+3. Click **"Convert"**  
+4. Provide the output file name and location  
+5. Click **"Save"**  
+
+The application will convert the PDF into a Word document.
+
+---
+
+## ⚠️ Troubleshooting
+- Ensure **Pandoc** is installed and added to system PATH  
+- Verify all Python dependencies are installed correctly  
+- If the application crashes, check for missing libraries or incorrect installation  
+
+---
+
+## 🙏 Acknowledgments
+- Built using **Python** and **Tkinter** for GUI  
+- PDF to Word conversion powered by **Pandoc**  
+- PDF to image conversion using **pdf2image**  
+- Word text extraction using **docx2txt**
